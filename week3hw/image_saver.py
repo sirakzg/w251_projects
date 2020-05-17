@@ -11,7 +11,7 @@ if len(sys.argv) != 2 or not os.path.isdir(sys.argv[1]):
 	exit()
 
 
-LOCAL_MQTT_HOST="localhost"
+LOCAL_MQTT_HOST="cloud-broker"
 LOCAL_MQTT_PORT=1883
 LOCAL_MQTT_TOPIC="face_detect"
 
