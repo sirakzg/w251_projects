@@ -8,14 +8,14 @@ import paho.mqtt.client as mqtt
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # 1 should correspond to /dev/video1 , your USB camera. The 0 is reserved for the TX2 onboard camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 480)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 320)
 cap.set(cv2.CAP_PROP_FPS, 12)
 
 
 
-LOCAL_MQTT_HOST="localhost"
+LOCAL_MQTT_HOST="mqtt_broker1"
 LOCAL_MQTT_PORT=1883
 LOCAL_MQTT_TOPIC="face_detect"
 
@@ -54,9 +54,9 @@ while(True):
 
 
 	# Display the resulting frame
-	cv2.imshow('frame',gray)
-	if cv2.waitKey(1) & 0xFF == ord('q'):
-	   break
+	#cv2.imshow('frame',gray)
+	#if cv2.waitKey(1) & 0xFF == ord('q'):
+	#   break
 
 	time.sleep(1)
 
