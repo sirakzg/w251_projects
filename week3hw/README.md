@@ -53,4 +53,4 @@ https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w25
 <img src="https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745705.png" />
 
 
-For instructions on this assignment see https://github.com/MIDS-scaling-up/v2/tree/master/week03/hw.
+For instructions on this assignment see [week03/hw](https://github.com/MIDS-scaling-up/v2/tree/master/week03/hw).
