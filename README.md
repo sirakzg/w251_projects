@@ -1,3 +1,2 @@
-# Homework 3 - Internet of Things 101
-
+# W251_projects
 Assignments for MIDS Deep Learning Course
