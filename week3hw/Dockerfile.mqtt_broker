@@ -6,5 +6,5 @@ RUN apk add mosquitto mosquitto-clients
 
 WORKDIR /
 
-CMD mosquitto -c $MQTT_CONFIG 
+CMD mosquitto -v -c $MQTT_CONFIG 
 
