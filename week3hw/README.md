@@ -31,7 +31,7 @@ docker network create --driver bridge face-bridge
 docker run --name cloud-broker -p 1883:1883 --network face-bridge -v ~/w251_projects/week3hw:/w251 --env MQTT_CONFIG='/w251/cloud_broker.conf' --rm -d mqtt_broker
 ```
 
-The final container runs a python script image_saver.py to receive MQTT messages from the cloud broker above, converts the byte arrays back into images and saves to a specified location. The docker file uses a Ubuntu base and installs python3, pip3, opencv and paho-mqtt.  When run an environment variable `SAVE_FOLDER` is used to pass along the destination location of the images.
+The final container runs a python script image_saver.py to receive MQTT messages from the cloud broker above, converts the byte arrays back into images and saves to a specified location. The docker file uses a Ubuntu base and installs python3, pip3, opencv and paho-mqtt.  When run an environment variable `SAVE_FOLDER` is used to pass along the destination location of the images.  OpenCV imwrite is used to save the images to .png files, and a timestamp cast as int is appended to the filename to ensure unique names.
 
 ```
 sudo s3fs objects-sirakzg-w251 /mnt/ibm-objstore/ -o passwd_file=$HOME/.cos_creds -o sigv2 -o use_path_request_style -o url=https://s3.us-east.objectstorage.softlayer.net
