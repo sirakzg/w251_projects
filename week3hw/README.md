@@ -46,11 +46,11 @@ The MQTT protocal provides a couple communication options in the name of the top
 ## Sample Images
 https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745673.png
 
-<img src="https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745673.png" />
+<img src="https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745673.png"  width="25%" height="25%"/>
 
 https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745705.png
 
-<img src="https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745705.png" />
+<img src="https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1589745705.png"  width="25%" height="25%"/>
 
 
 For instructions on this assignment see [week03/hw](https://github.com/MIDS-scaling-up/v2/tree/master/week03/hw).
