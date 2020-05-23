@@ -1,4 +1,4 @@
-#Question 2
+# Question 2
 
 ## a) 
 The ConvnetJS MNIST demo has 9 layers in its network:
