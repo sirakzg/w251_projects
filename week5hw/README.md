@@ -33,7 +33,7 @@ When using a learning rate of `1.0` the accuracy of the validation set dips belo
 For a different set of images to train on I used the Beans dataset also provided by Goole here:  https://www.tensorflow.org/datasets/catalog/beans.  I trained on 400 iterations (again Tensorboard tended to core dump after too many iterations) and achieved a train accuracy of 92%, and validation accuracy 86%.
 
 #### 11) 
-Using 400 training iterations I observed running time for MobileNet on the GPU (including bottleneck run as I found this step was GPU heavy) came to 4 minutes and 10 seconds.  Compare this to the CPU run (not including model download) of _ seconds.
+Using 400 training iterations I observed running time for MobileNet on the GPU (including bottleneck run as I found this step was GPU heavy) came to 4 minutes and 10 seconds.  Compare this to the CPU run of 7 minutes and 7 seconds.
 
 #### 12) 
 
