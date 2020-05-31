@@ -30,13 +30,13 @@ When reducing the learning rate from the default `0.01` to `0.005` I did indeed 
 When using a learning rate of `1.0` the accuracy of the validation set dips below 80% but still managed to train a useful graph in this instance. Note for certain training runs I was only able to do  100 iterations to avoid Tensorboard from crashing and core dumping.  Longer runs with this learning rate and no decay could potentially produce unusable models
 
 #### 10) 
-For a different set of images to train on I used the Beans dataset also provided by Goole here:  https://www.tensorflow.org/datasets/catalog/beans.  I trained on 400 iterations (again Tensorboard tended to core dump after too many iterations) and achieved a train accuracy of 92%, and validation accuracy 86%.
+For a different set of images to train on I used the Beans dataset also provided by Goole here:  https://www.tensorflow.org/datasets/catalog/beans.  I trained on 400 iterations (again Tensorboard tended to core dump after too many iterations) and achieved a train accuracy of 92%, and validation accuracy 86%.  The training size was just over 1000 images but comes in at 178 MB, my main reason for selecting this dataset.
 
 #### 11) 
-Using 400 training iterations I observed running time for MobileNet on the GPU (including bottleneck run as I found this step was GPU heavy) came to 4 minutes and 10 seconds.  Compare this to the CPU run of 7 minutes and 7 seconds.
+Using 400 training iterations on the flower_photos dataset I observed running time for MobileNet on the GPU (including bottleneck run as I found this step was GPU heavy) came to 5 minutes and 15 seconds.  Compare this to the CPU run of 7 minutes and 7 seconds.
 
 #### 12) 
-
+Changing over to the Inception model (which required the use of the resize_images.py script to increase resolutions to 299x299) saw the CPU training time of 35 minutes and 10 seconds, compared to the GPU run time of 19 minutes and 19 seconds.
 
 #### 13) 
 The following values should be passed to the retrain script to run the Inception model:
