@@ -6,8 +6,10 @@ I decided to base my deep learning facial recognition algorithm on a model I tra
 
 There were a few hurdles getting this model to act similarly to a Yolo type model: it was trained on input resolutions of 96x96 grayscale images and so a manual tiling across the webcam's resolution of 480x288 was required. Also I had to tranlate the outputed paired landmark positions into a bounding box around the face by calculating the min/max x and y values found in each tile.  
 
+
 <img src="face_1592170144.png"  width="25%" height="25%"/>
-https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1592170144.png
+https://objects-sirakzg-w251.s3.us-east.cloud-object-storage.appdomain.cloud/w251/face_1592170144.png (Image ranges from 138-147)
+
 
 Included in this assignments folder are the docker file `Dockerfile.face-landmarks` which was repurposed from HW3 but instead of using the CUDA base image it's now using the Tensorflow image.  The python script `landmarks_faceDetector.py` is also modified from HW3's OpenCV version of the script but now opens a pretrained Keras model from my Facial Landmarks project.
 
