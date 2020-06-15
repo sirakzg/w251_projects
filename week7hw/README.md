@@ -22,4 +22,4 @@ I noticed a very performant framerate in an early stage when I was not yet tilin
 
 ## 4) Comparisons
 
-While I personally preferred the quality of this model over the one from HW3s OpenCV version I still prefer the OpenCV implementation due to it's ease of use (ie no tiling) and easier access to facial bounding boxes.
+While I personally preferred the quality of this model over the one from HW3s OpenCV version I still prefer the OpenCV implementation due to it's ease of use (ie no tiling) and easier access to facial bounding boxes.  Another comparison is that the size of the Keras model is 115 MB vs the 941 KB cascade filter used in OpenCV, a much lighter implementation suitable for production purposes.
