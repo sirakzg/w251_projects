@@ -1,6 +1,13 @@
 # HW 8 Questions
 
+### Annotating the Dataset
 ![Annoted Image](./image_annotations.jpg)
+
+ - It took me approx. 2.5 hrs to annotate the 384 images in the data set.  
+ - Using `grep -i "Tie" * | wc -l` in the annotations folder I count 319 labels for Tie Fighter and 312 for Millennium Falcon.
+ - 
+ - 
+
 
 ### Image Augmentations
 
