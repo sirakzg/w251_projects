@@ -23,7 +23,7 @@
   
  ![Network Utilizations](./network_util.png)
 
- - Monitoring of network traffic was done using the tool `nmon`, and while network bandwith was fairly substantial I don't believe it was a bottle neck in our training.  If I had been able to successfully request 4 V100s on the IBM cloud instead of the P100s, their faster compute and training with a larger batch size would probably have caused a larger strain on networking.
+ - Monitoring of network traffic was done using the tool `nmon`, and while network bandwith was fairly substantial I don't believe it was a large bottleneck in our training.  If I had been able to successfully request 4 V100s on the IBM cloud instead of the P100s, their faster compute and training with a larger batch size would probably have caused a larger strain on networking.
  
   ![Learning Rate](./learning_rate.png)
 
@@ -31,6 +31,12 @@
  
    ![File Sizes](./filesizes.png)
 
- - Our training set consists of 711 MB for German text and 637 MB of English.  Each file consists of 4562102 lines of text
+ - Our training set consists of 711 MB for German text and 637 MB of English, with both files consisting of 4562102 lines of text.
 
+ - Tensorflow checkpoints consist of 4 files: a checkpoint file, a .index file and .meta file, as well as a `.data-%05d-of-%05d` file that containing the structure and weights of the trained models.
+ 
+ - Size of checkpoints is 12 MB for the .meta file, and 697 MB for the .data file.
+ 
+ - Steps or iterations consists of the model training thru one batch from the dataset, calculating loss/error and updating it's weights.  Using the training loss time of (2 days 3 hours 55 minutes and 45 seconds) 186945 seconds and 103500 iterations, we are training at an average of 1.8 seconds per step.
 
+ - Network utilization is negatively correlated with time per step size. As more nodes are added to the training process more data being transmitted will slow down the time it takes for each node to receive updated weights.
