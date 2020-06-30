@@ -27,8 +27,10 @@
  
   ![Learning Rate](./learning_rate.png)
 
- - 
+ - The Learning rate is manipulated over the course of the training processes, first going thru some `warmup` phase during the first 8000 iterations before slowly being reduced.
+ 
+   ![File Sizes](./filesizes.png)
 
-### Image Augmentations
+ - Our training set consists of 711 MB for German text and 637 MB of English.  Each file consists of 4562102 lines of text
 
-Describe the image augmentation operations of the tool https://github.com/codebox/image_augmentor:
+
