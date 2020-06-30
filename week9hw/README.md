@@ -1,13 +1,14 @@
-# HW 9 Questions
+# HW 9 Distributed Training and Neural Machine Translation
 
-### Annotating the Dataset
-![Annoted Image](./image_annotations.jpg)
+### Questions
 
- - It took me approx. 2.5 hrs to annotate the 384 images in the data set.  
- - Using `grep -i "Tie" * | wc -l` in the annotations folder I count 319 labels for Tie Fighter and 312 for Millennium Falcon.
- - Larger datasets will require several people to annotate, unless there are sophisticated software tools to assist in the task. There are online services like Amazon's Mechanical Turk that can be utilized in contracting out this work to hundreds or thousands of workers.
- - Once images are annotated, that data has to also be transformed by any image augmentations like flip, translate, crop, scale etc.  There are libraries such as https://github.com/albumentations-team/albumentations that also augment the annotation data, but specific augmentation operations may require custom annotation operations as well.
+![BLEU Scores](./BLEU_score.png)
 
+ - As we can see in this chart it took 50 hours to reach 100k iterations, one-third the 300k iterations the default script is setup to run. 
+ 
+ ![Evaluation Loss](./eval_loss.png)
+
+ - Judging from our evaluation loss at 100k iterations we are very close to the expected final eval loss shwon in the homework description (https://github.com/MIDS-scaling-up/v2/tree/master/week09/hw). However loss is not always a good measure of how good a model will perform, and as we compare our BLEU scores from above with that of the expected result after 300k iterations being closer to 0.38 instead of our achieved value of 0.369.
 
 ### Image Augmentations
 
