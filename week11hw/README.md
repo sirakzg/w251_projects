@@ -99,7 +99,6 @@ For example in my first successful training run epsilon starts at the following:
 
 ```
 0 : Episode || Reward:  -212.31146135603169 || Average Reward:  -212.31146135603169 epsilon:  0.995
-2020-07-08 19:18:11.248320: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
 1 : Episode || Reward:  -225.38897378773748 || Average Reward:  -218.85021757188457 epsilon:  0.990025
 2 : Episode || Reward:  -195.78135306829228 || Average Reward:  -211.16059607068715 epsilon:  0.985074875
 3 : Episode || Reward:  -8.896100199539845 || Average Reward:  -160.59447210290034 epsilon:  0.9801495006250001
