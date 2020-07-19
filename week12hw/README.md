@@ -32,7 +32,7 @@ I noticed that CPU usage for the crawlers was consistantly below 5%, so I would 
 #### 3. 
 In Step 2 of the Lazynlp crawler docs (https://github.com/chiphuyen/lazynlp) they outline how to de-duplicate the urls before download.  Since I ran each dataset to output to different folders, and the Reddit URLs were already deduplicated, I didn't need to run this step
 
-Times:
+#### Times:
 
 ```
 Gutenberg AUS : 2 hrs, 8 minutes
