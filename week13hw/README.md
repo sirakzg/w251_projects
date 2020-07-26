@@ -26,3 +26,13 @@ user	511m45.420s
 sys	29m21.384s
 
 ```
+
+
+```
+nvidia@nvidia-desktop:~/w251_projects/week13hw/jetson-inference/python/training/classification/plants$ ll
+total 175000
+drwxr-xr-x 2 nvidia nvidia     4096 Jul 25 11:44 ./
+drwxr-xr-x 4 nvidia nvidia     4096 Jul 25 11:44 ../
+-rw-r--r-- 1 nvidia nvidia 89594265 Jul 25 20:10 checkpoint.pth.tar
+-rw-r--r-- 1 nvidia nvidia 89594267 Jul 25 20:05 model_best.pth.tar
+```
