@@ -1,3 +1,7 @@
+# Questions
+
+1. The following output is a snippet of the test results as well as the final time it took to train. I performed training on the Jetson Xavier NX and saw a slight improvement from the TX2, averaging 30 minutes an epoch.
+
 ```
 Epoch: [99] completed, elapsed time 290.357 seconds
 Test: [  0/142]	Time  0.577 ( 0.577)	Loss 2.2236e+00 (2.2236e+00)	Acc@1  37.50 ( 37.50)	Acc@5  75.00 ( 75.00)
@@ -18,15 +22,12 @@ Test: [140/142]	Time  0.097 ( 0.088)	Loss 3.7781e+00 (1.3942e+00)	Acc@1   0.00 (
  * Acc@1 60.352 Acc@5 87.841
 saved checkpoint to:  plants/checkpoint.pth.tar
 
-
-
-
 real	524m51.785s
 user	511m45.420s
 sys	29m21.384s
 
 ```
-
+2. Unfortunately I didn't get a chance to train with larger batch sizes, and the following outputs will be used later in a class lab.
 
 ```
 nvidia@nvidia-desktop:~/w251_projects/week13hw/jetson-inference/python/training/classification/plants$ ll
